@@ -10,7 +10,7 @@ def moving_average(x, window):
     return np.convolve(x, np.ones(window)/window, mode="valid")
 
 for i in iterations:
-    reward_margins_path = f"/home/aagr657/Documents/ISARC_2026/reward_margins_{i}.npy"
+    reward_margins_path = # Add your path
     reward_margins = np.load(reward_margins_path)
     length = len(reward_margins)
     x = list(range(1, length + 1))
