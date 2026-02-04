@@ -117,7 +117,7 @@ def main(seed_value):
     resource_2_capacity = 8
     resource_3_capacity = 8
 
-    action_space = np.load("/home/aagr657/Documents/ISARC_2026/action_space.npy")
+    action_space = np.load("Add your path")
 
     # Suppose we define N=3 different weight vectors
     weight_vector = [1,1] # Equal weightage to all the three
@@ -203,9 +203,7 @@ if __name__ == "__main__":
         final_Schedules.extend(schedules)
         final_Objectives.extend(objectives)
         final_parallel_activities.extend(parallel_activities)
-    # Preference_filename = "/home/aagr657/Documents/ISARC_2026/dpo_preferences_new4.json"
-    # save_preferences(all_preferences, Preference_filename)
-
+    
     results_updated_model = []
     results_base_model = []
 
@@ -217,7 +215,7 @@ if __name__ == "__main__":
             "parallel_activities": to_json_safe(final_parallel_activities[i])
         })
 
-    output_path = "/home/aagr657/Documents/ISARC_2026/base_model_results.json"
+    output_path = "Add your path"
     with open(output_path, "w") as f:
         json.dump(results_base_model, f, indent=2)
 
