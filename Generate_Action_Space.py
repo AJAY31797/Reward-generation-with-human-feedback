@@ -78,4 +78,4 @@ def getActionSpaceLength(n_elements, resource_1_capacity, resource_2_capacity, r
 
 action_space = getActionSpaceLength(n_elements, resource_1_capacity, resource_2_capacity, resource_3_capacity, resource_requirements) # This will get the number of valid actions
 
-np.save("/home/aagr657/Documents/ISARC_2026/action_space.npy", action_space)
+np.save("Add your path to save the action space location", action_space)
