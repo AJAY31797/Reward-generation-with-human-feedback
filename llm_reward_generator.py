@@ -29,7 +29,7 @@ base_model = AutoModelForCausalLM.from_pretrained(
 model = base_model
 
 # Load LoRA adapters
-# model = PeftModel.from_pretrained(base_model, "/home/aagr657/Documents/ISARC_2026/dpo_reward_model_iter4/checkpoint-300") # Now collect preferences using this model.
+# model = PeftModel.from_pretrained(base_model, "Add path to updated parameters") # Now collect preferences using this model.
 
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 
