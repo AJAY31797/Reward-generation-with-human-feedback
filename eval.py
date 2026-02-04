@@ -160,10 +160,9 @@ def evaluate_fn(seed_value, iteration, reward_fn):
     minibatch_size = 248
     max_timesteps = 1000 # Maximum timesteps per episode
     
-    main_dir = f"/home/aagr657/Documents/ISARC_2026/PPO+GNN_{seed_value}_{iteration}"
-    parameter_storage_location = os.path.join (main_dir, f"Validation_ISARC2026_{seed_value}")
-
-    # parameter_storage_location = "D:/Ajay/Precast_Assembly_Scheduling/Training_models/Improved2_Singleweather_RewardNorm_CostRewardDeltat/Paper_3_Validation_Results/Validation_Paper3_4Divisions_Deterministic_Separate_11"
+    main_dir = # Add your path
+    parameter_storage_location = os.path.join (main_dir, f"Add your path")
+    
     checkpoint_filename = "PPO_Model_Episdoe_400.pth"
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     for agent_id in range(1,2):
