@@ -64,15 +64,15 @@ def load_preferences(filename):
     
     return preferences
 
-filename = "/home/aagr657/Documents/ISARC_2026/dpo_preferences.json"
+filename = "Add path to first set of dpo preferences"
 preference_dataset = load_preferences(filename)
-filename = "/home/aagr657/Documents/ISARC_2026/dpo_preferences_new.json"
+filename = "Add path to second set of dpo preferences"
 preference_dataset_new = load_preferences(filename)
-filename = "/home/aagr657/Documents/ISARC_2026/dpo_preferences_new2.json"
+filename = "Add path to third set of dpo preferences"
 preference_dataset_new2 = load_preferences(filename)
-filename = "/home/aagr657/Documents/ISARC_2026/dpo_preferences_new3.json"
+filename = "Add path to fourth set of dpo preferences"
 preference_dataset_new3 = load_preferences(filename)
-filename = "/home/aagr657/Documents/ISARC_2026/dpo_preferences_new4.json"
+filename = "Add path to fifth set of dpo preferences"
 preference_dataset_new4 = load_preferences(filename)
 
 combined_data = preference_dataset + preference_dataset_new + preference_dataset_new2 + preference_dataset_new3 + preference_dataset_new4
@@ -98,7 +98,7 @@ base_model.config.use_cache = False
 
 # model = get_peft_model(model, lora_config)
 
-updated_model = PeftModel.from_pretrained(base_model, "/home/aagr657/Documents/ISARC_2026/dpo_reward_model_iter3/checkpoint-240", is_trainable=True)
+updated_model = PeftModel.from_pretrained(base_model, "Add path to the updated model parameters", is_trainable=True)
 
 # Update training config
 training_args = DPOConfig(
