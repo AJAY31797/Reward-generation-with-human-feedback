@@ -1,7 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-path = "/home/aagr657/Documents/ISARC_2026/"
+path = # Add your path
 
 iterations = [1, 2, 3, 4]
 window = 5
